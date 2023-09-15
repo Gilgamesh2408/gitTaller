@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Datos de usuario</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <br>
+        <input type="text" id="nombre" name="nombre"/>
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <br>
+        <input type="text" id="apellidos" name="apellidos"/>
+        <br>
+        <label for="contraseña">Contrasenia</label>
+        <br>
+        <input type="password" id="contraseña" name="contraseña"/>
+        <br>
+        <label for="confirmar contraseña">Confirmar contrasenia</label>
+        <br>
+        <input type="password" id="contraseña" name="contraseña"/>
+        <br>
+        <label for="Identificacion">Identificacion</label>
+        <br>
+        <select name="select">
+            <option value="CC">CC</option> 
+            <option value="TI" selected>TI</option>
+            <option value="CE">CE</option>
+        </select>
+        <input type="text" id="Identificacion" name="Identificacion"/>
+        <br>
+        Sexo
+        <br>
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre 
+        <br/>
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br/><br/>
+
+        Incluir mi foto
+        <br>
+        <input type="file" name="foto"/><br/><br/>
+        <input type="checkbox" name="checkbox"/>
+        Estudiante.....
+        <br/><br/>
+    
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="form-group">
+                <label for="departamento">Departamento</label>
+                <select class="form-control" id="departamento" name="departamento" required>
+                    <option value = "">- Selecciona -</option>
+                    <option value = "Amazonas">Amazonas</option>
+                    <option value = "Antioquia">Antioquia</option>
+                    <option value = "Arauca">Arauca</option>
+                    <option value = "Atlántico">Atlántico</option>
+                    <option value = "Bolívar">Bolívar</option>
+                    <option value = "Boyacá">Boyacá</option>
+                    <option value = "Caldas">Caldas</option>
+                    <option value = "Caquetá">Caquetá</option>
+                    <option value = "Casanare">Casanare</option>
+                    <option value = "Cauca">Cauca</option>
+                    <option value = "Cesar">Cesar</option>
+                    <option value = "Chocó">Chocó</option>		            
+                    <option value = "Córdoba">Córdoba</option>
+                    <option value = "Cundinamarca">Cundinamarca</option>
+                    <option value = "Guainía">Guainía</option>
+                    <option value = "Guaviare">Guaviare</option>
+                    <option value = "Huila">Huila</option>
+                    <option value = "La Guajira">La Guajira</option>
+                    <option value = "Magdalena">Magdalena</option>
+                    <option value = "Meta">Meta</option>
+                    <option value = "Nariño">Nariño</option>
+                    <option value = "Norte de Santander">Norte de Santander</option>
+                    <option value = "Putumayo">Putumayo</option>                
+                    <option value = "Quindío">Quindío</option>  
+                    <option value = "Risaralda">Risaralda</option>
+                    <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
+                    <option value = "Santander">Santander</option>
+                    <option value = "Sucre">Sucre</option>
+                    <option value = "Tolima">Tolima</option>
+                    <option value = "Valle del Cauca">Valle del Cauca</option>
+                    <option value = "Vaupés">Vaupés</option>
+                    <option value = "Vichada">Vichada</option>
+                  </select>
+                </div>
+                <br/>
+                <label for="fecha de nacimiento">Fecha de nacimiento</label>
+                <input type="date" value="fecha" id="fecha de nacimiento"/>
+                <br/><br/>
+                <label for="Temas de interés">Temas de interés</label>
+                <select id="Temas de interés">
+                    <option>Gestión de proyectos</option>
+                    <option>Administración de bases de datos</option>
+                    <option>Análisis y programación</option>
+                    <option>Arquitectura</option>
+                    <option>Calidad</option>
+                    <option>ERP, CRM, Business Intelligence</option>
+                    <option>Redes</option>
+                </select>     
+        </fieldset><br/>
+        <button type="submit">Guardar cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>  
+    </form>
+
+    
+</body>
+</html>
